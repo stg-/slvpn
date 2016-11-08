@@ -15,5 +15,5 @@ RUN mv ArrayNetworksL3VPN /usr/local/array_vpn
 ADD run.sh /run.sh
 CMD ["sh", "/run.sh"]
 
-# E.g.: docker run --net=host --privileged -d -e VPN_HOST="vpn.ams03.softlayer.com" -e VPN_PORT="443" -e VPN_USER="MyVPNUser" -e VPN_PASS="MyVPNPass" vpn_sl 
+# E.g.: docker run --net=host --privileged -d -e VPN_HOST="vpn.ams03.softlayer.com" -e VPN_PORT="443" -e VPN_USER="MyVPNUser" -e VPN_PASS="MyVPNPass" slvpn
 # You can now ssh to your SL's hosts through the private VLAN! :)
