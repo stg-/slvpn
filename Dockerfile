@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
-RUN apt-get update && apt-get -y install wget
+RUN apt-get update && apt-get -y install wget net-tools
 RUN wget -O /tmp/ArrayNetworksL3VPN_LINUX.zip speedtest.dal05.softlayer.com/array/ArrayNetworksL3VPN_LINUX.zip
 RUN mkdir /root/ArrayNetworksL3VPN && mv /tmp/ArrayNetworksL3VPN_LINUX.zip /root/ArrayNetworksL3VPN
 WORKDIR /root/ArrayNetworksL3VPN
